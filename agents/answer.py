@@ -102,7 +102,7 @@ class AnswerAgent:
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_content}
                 ],
-                model="openai/gpt-oss-20b",  # Large model for reasoning
+                model="qwen-qwq-32b",  # Large model for reasoning
                 temperature=0.5
             )
             
