@@ -1,0 +1,36 @@
+# CodeAtlas Project Dependencies
+
+# AST Parsing
+tree-sitter
+tree-sitter-python
+
+tree-sitter-javascript
+# Databases
+qdrant-client
+neo4j
+
+# Embeddings & Transformers
+openai
+numpy
+
+
+# LLM & Agent Frameworks
+groq
+langgraph
+langchain-core
+
+# API Backend
+fastapi
+uvicorn
+pydantic
+
+# Frontend UI
+streamlit
+
+# Utilities & Cloning
+gitpython
+python-dotenv
+requests
+
+# Testing
+pytest
