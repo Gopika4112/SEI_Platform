@@ -57,7 +57,7 @@ class PlannerAgent:
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": query}
                 ],
-                model="qwen-qwq-32b",
+                model="qwen/qwen3.8-27b",
                 temperature=0.5,
                 response_format={"type": "json_object"}
             )

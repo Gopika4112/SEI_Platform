@@ -37,8 +37,9 @@ def run_ingestion_pipeline(job_id: str, github_url: str, branch: Optional[str] =
         "stats": {"files": 0, "chunks": 0, "nodes": 0, "edges": 0}
     }
     
-    # Store cloned repos in temporary data folder
-    temp_dir = os.path.abspath(f"./data/temp_repos/{job_id}")
+    # Store cloned repos in a writable temp folder
+    temp_dir = os.path.join(os.path.expanduser("~"), ".codeatlas_temp_repos", job_id)
+    os.makedirs(temp_dir, exist_ok=True)
     
     try:
         # 1. Programmatically clone repository

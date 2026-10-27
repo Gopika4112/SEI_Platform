@@ -16,8 +16,8 @@ def clean_file_path(path: str) -> str:
     if not path:
         return ""
     norm_path = path.replace("\\", "/")
-    # Match temp_repos/UUID/relative_path
-    match = re.search(r"temp_repos/[^/]+/(.+)$", norm_path)
+    # Match temp_repos/UUID/relative_path or .codeatlas_temp_repos/UUID/relative_path
+    match = re.search(r"(?:temp_repos|\.codeatlas_temp_repos)/[^/]+/(.+)$", norm_path)
     if match:
         return match.group(1)
     # Match Code-Atlas/relative_path

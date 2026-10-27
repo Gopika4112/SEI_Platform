@@ -76,7 +76,7 @@ class EvaluatorAgent:
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_content}
                 ],
-                model="qwen/qwen3-8b",  # Small fast model is perfect for scoring tasks
+                model="qwen/qwen3.8-27b",  # Small fast model is perfect for scoring tasks
                 temperature=0.5,
                 response_format={"type": "json_object"}
             )

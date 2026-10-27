@@ -102,7 +102,7 @@ class AnswerAgent:
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_content}
                 ],
-                model="qwen-qwq-32b",  # Large model for reasoning
+                model="qwen/qwen3.8-27b",  # Large model for reasoning
                 temperature=0.5
             )
             
