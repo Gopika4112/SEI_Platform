@@ -151,9 +151,10 @@ pre { border: 1px solid var(--rule); }
 [data-testid="stRadio"] label:has(input:checked) p { color: var(--ink) !important; font-weight: 600; }
 
 /* ---------- other native widgets ---------- */
-[data-testid="stChatInput"] { background: var(--sheet) !important; border: 1px solid var(--rule) !important; border-radius: 2px !important; }
-[data-testid="stChatInput"] textarea { background: transparent !important; color: var(--ink) !important; -webkit-text-fill-color: var(--ink) !important; }
+[data-testid="stChatInput"] { background: #2B2D22 !important; border: 1px solid var(--rule) !important; border-radius: 2px !important; }
+[data-testid="stChatInput"] textarea, [data-testid="stChatInput"] textarea:focus { background: #2B2D22 !important; color: #F3EDE0 !important; -webkit-text-fill-color: #F3EDE0 !important; caret-color: #F3EDE0 !important; }
 [data-testid="stChatInput"] textarea::placeholder { color: #9A957F !important; -webkit-text-fill-color: #9A957F !important; }
+[data-testid="stChatInputContainer"], [data-testid="stChatInputContainer"] > div { background: #2B2D22 !important; }
 [data-testid="stBottom"] > div { background: transparent !important; }
 [data-testid="stExpander"] { background: var(--sheet); border: 1px solid var(--rule) !important; border-radius: 2px; }
 [data-testid="stExpander"] summary, [data-testid="stExpander"] summary * { color: var(--ink) !important; }
